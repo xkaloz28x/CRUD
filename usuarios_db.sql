@@ -1,0 +1,12 @@
+
+CREATE DATABASE IF NOT EXISTS usuarios_db;
+USE usuarios_db;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    nombre VARCHAR(50) NOT NULL,
+    apellido VARCHAR(50) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    correo VARCHAR(100) NOT NULL
+);
